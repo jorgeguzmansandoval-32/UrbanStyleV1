@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../Image/favicon-urbanstyle.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>UrbanStyle - Administrador</title>
+</head>
+<body class="body">
+
+    <div id="sharedHeader"></div>
+
+    <main class="container my-5">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+            <h1 class="mb-0">Panel de administración</h1>
+            <div class="d-flex gap-2 flex-wrap">
+                <a href="../View/admin_compras.html" class="btn btn-outline-dark">Ver compras</a>
+                <a href="../View/Inicio.html" class="btn btn-dark">Volver al inicio</a>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-5">
+                <div class="admin-card">
+                    <h3>Crear nuevo producto</h3>
+                    <form id="productForm" class="product-form">
+                        <div class="form-group">
+                            <label for="productName">Nombre del producto</label>
+                            <input id="productName" type="text" placeholder="Ej: Camisa Oversize" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="productDescription">Descripción</label>
+                            <textarea id="productDescription" rows="3" placeholder="Ej: 100% algodón, elegante y cómoda." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="productPrice">Precio</label>
+                            <input id="productPrice" type="number" min="1" step="1" placeholder="Ej: 24990" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="productStock">Stock</label>
+                            <input id="productStock" type="number" min="0" step="1" placeholder="Ej: 12" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="productImage">Seleccionar imagen del equipo</label>
+                            <input id="productImage" type="file" accept="image/*">
+                        </div>
+
+                        <button type="submit" class="btn btn-dark w-100">Guardar producto</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="admin-card">
+                    <h3>Productos actuales</h3>
+                    <div id="productList" class="admin-product-list"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="sharedFooter"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/layout.js"></script>
+
+    <!-- Archivo JS Externo con las Funciones del Sitio -->
+    <script src="../js/Funciones.js"></script>
+</body>
+</html>

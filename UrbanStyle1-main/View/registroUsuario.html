@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpg/png" href="../Image/favicon-urbanstyle.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>UrbanStyle - Registro / Contacto</title>
+</head>
+<body class="body">
+
+  <div id="sharedHeader"></div>
+  <main class="form-container">
+    <h2>Formulario de Registro</h2>
+    <form id="shipping-form">
+
+    <!-- Campo Nombre  Completo-->
+        <div class="form-group">
+          <label for="nombre"> Nombre Completo </label>
+          <div>
+            <input type="text" id="nombre" placeholder="Juan Perez" onblur="validaControl(this)">
+            <span class="error-mensaje"></span>
+          </div>
+        </div>
+      
+    <!-- Campo para el correo electrónico -->
+    <div class="form-group">
+      <label for="correo"> Correo Electrónico </label>
+      <input type="email" id="correo" placeholder="juan.perez@example.com" onblur="validarCampoCorreo(this); validaControl(this)">
+      <span id="errorCorreo" class="error-mensaje"></span>
+    </div>
+
+    <!--Campo para el telefono-->
+        <div class="form-group">
+            <div>
+              <label for="telefono"> Telefono de Contacto </label>
+              <input type="number" id="telefono" placeholder="Ej: 912345678" onblur="validaControl(this)">
+              <span class="error-mensaje"></span>
+            </div>
+        </div>
+
+        <!-- Región -->
+        <div class="form-group">
+            <label for="region"> Region</label>
+                <select id="selectRegion" required onchange="cargarComunas();validaControl(this)">
+                    <option value=""> Selecciona una Region </option> 
+                </select>
+        </div>
+              <div class="form-group">
+                <div>
+                  <label for="comuna"> Comuna</label>
+                    <select id="comuna" required disabled onchange="validaControl(this)">
+                        <option value=""> Selecciona primero la Region </option>
+                    </select>
+                </div>
+              </div>
+
+    <!-- Campo para guardar/mostrar el código obtenido -->
+      <input type="hidden" id="codigoComuna" name="codigoComuna">
+      <div>
+        <button type="button" class="btn btn-Guardar" onclick="guardarUsuario(event)"> Registrarse </button>
+        <button type="button" class="btn btn-Limpiar" onclick="limpiarFormularioUsuario()"> Limpiar Formulario </button>
+        <button type="button" class="btn btn-Volver" onclick="cancelarRegistroUsuario()"> Volver </button>
+      </div>
+    </form>
+  </main>
+  
+  <div id="sharedFooter"></div>
+
+  <!-- Scripts -->
+  <script src="../js/layout.js"></script>
+  <script src="../js/Funciones.js"></script>
+</body>
+</html>

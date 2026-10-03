@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpg/png" href="../Image/favicon-urbanstyle.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>UrbanStyle - Iniciar Sesión</title>
+</head>
+<body class="body_registro">
+
+  <div id="sharedHeader"></div>
+  <main class="form-container">
+    <h2>Login Usuario</h2>
+    <form id="shipping-form">
+
+    <!-- Campo para el correo electrónico -->
+    <div class="form-group">
+      <label for="correo"> Correo Electrónico </label>
+      <input type="email" id="correo" placeholder="juan.perez@example.com" onblur="validarCampoCorreo(this); validaControl(this)">
+      <span id="errorCorreo" class="error-mensaje"></span>
+    </div>
+
+    <!-- Campo para la contraseña -->
+    <div class="form-group">
+      <label for="contrasena"> Contraseña </label>
+      <input type="password" id="contrasena" placeholder="********" onblur="validaControl(this); ValidaPass(this, { Value: this.value, IsValid: true })">
+      <span id="errorContrasena" class="error-mensaje"></span>
+    </div>        
+    
+    <div>
+        <button type="submit" class="btn btn-primary" onclick="guardarUsuario(event)"> Ingresar </button>
+        <button type="button" class="btn btn-secondary" onclick="volverDesdeLogin()"> Volver </button>     
+      </div>  
+    </form>
+  </main>
+  <div id="sharedFooter"></div>
+
+  <!-- Scripts -->
+  <script src="../js/layout.js"></script>
+  <script src="../js/Funciones.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UrbanStyle — streetwear contemporáneo para quienes hacen de la calle su identidad.">
+    <link rel="icon" type="image/png" href="../Image/favicon-urbanstyle.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>UrbanStyle — Streetwear</title>
+</head>
+<body class="home-page">
+
+    <div class="announcement-bar">
+        <span>ENVÍOS A TODO CHILE</span>
+        <span class="announcement-dot">●</span>
+        <span>CAMBIOS HASTA 30 DÍAS</span>
+        <span class="announcement-dot">●</span>
+        <span>NUEVA COLECCIÓN 2026</span>
+    </div>
+
+    <div id="sharedHeader"></div>
+    <!-- Contenido principal de la página 
+    <header>
+        <nav class="navbar-custom home-nav">
+            <div class="logo">
+                <a href="../View/Inicio.html" aria-label="UrbanStyle inicio">
+                    <img src="../Image/favicon-urbanstyle.svg" width="80" height="80" alt="Logo UrbanStyle">
+                </a>
+            </div>
+
+            
+            <button class="hamburger-btn" id="hamburgerBtn" type="button" aria-label="Abrir menú" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a class="active" href="../View/Inicio.html">Inicio</a></li>
+                <li><a href="#categorias">Explora</a></li>
+                <li><a href="#productos">Shop</a></li>
+                <li><a href="../View/blog.html">Blog</a></li>
+                <li><a href="../View/nosotros.html">Nosotros</a></li>
+                <li><a href="../View/contacto.html">Contacto</a></li>
+                <li data-admin-item="true" style="display:none;"><a href="../View/admin_crearProductos.html">Crear productos</a></li>
+                <li><a href="../View/Login.html">Cuenta</a></li>
+                <li class="nav-item-cart"><a href="../View/Carrito.html">Bolsa <span id="cartBadge" class="cart-badge">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+--> 
+    <main>
+        <!-- HERO PRINCIPAL -->
+        <section class="premium-hero">
+            <div class="premium-hero-media">
+                <img src="../Image/UrbanStyle-tienda.jpg" alt="Interior de la tienda UrbanStyle">
+            </div>
+            <div class="premium-hero-overlay"></div>
+            <div class="premium-hero-content">
+                <p class="eyebrow">DROP 01 / 2026</p>
+                <h1>VISTE<br><span>ACTITUD.</span></h1>
+                <p class="hero-copy">Streetwear pensado para moverte distinto. Siluetas oversize, básicos esenciales y piezas con carácter.</p>
+                <div class="hero-actions">
+                    <a class="premium-btn premium-btn-primary" href="#productos">Comprar colección <span>↗</span></a>
+                    <a class="premium-btn premium-btn-ghost" href="#categorias">Explorar UrbanStyle</a>
+                </div>
+            </div>
+            <div class="hero-scroll">SCROLL <span>↓</span></div>
+        </section>
+
+        <!-- TICKER -->
+        <div class="ticker" aria-label="Destacados UrbanStyle">
+            <div class="ticker-track">
+                <span>STREETWEAR</span><b>✦</b><span>OVERSIZE</span><b>✦</b><span>DROP 01</span><b>✦</b><span>URBAN ESSENTIALS</span><b>✦</b>
+                <span>STREETWEAR</span><b>✦</b><span>OVERSIZE</span><b>✦</b><span>DROP 01</span><b>✦</b><span>URBAN ESSENTIALS</span><b>✦</b>
+            </div>
+        </div>
+
+        <!-- INTRO -->
+        <section class="home-intro section-shell">
+            <div class="intro-kicker">01 / LA MARCA</div>
+            <div class="intro-copy">
+                <h2>No seguimos<br><em>tendencias.</em><br>Las llevamos a la calle.</h2>
+                <p>UrbanStyle mezcla cultura urbana, comodidad y diseño contemporáneo. Una selección de prendas para construir tu propio uniforme diario.</p>
+                <a class="text-link" href="../View/nosotros.html">Conoce UrbanStyle <span>→</span></a>
+            </div>
+        </section>
+
+        <!-- EXPLORA -->
+        <section id="categorias" class="explore-section section-shell">
+            <div class="explore-intro">
+                <div>
+                    <span class="section-number">02 / EXPLORA</span>
+                    <h2>Encuentra tu<br><span>propio código.</span></h2>
+                </div>
+                <div class="explore-copy">
+                    <p>Desde capas statement hasta básicos para todos los días. Explora las piezas que construyen el universo UrbanStyle.</p>
+                    <a class="text-link" href="#productos">Ver toda la selección <span>→</span></a>
+                </div>
+            </div>
+
+            <div class="explore-grid">
+                <a class="explore-card explore-card-featured" href="#productos">
+                    <img src="../Image/catalogo-chaqueta-racing.jpg" alt="Chaquetas streetwear UrbanStyle">
+                    <div class="explore-shade"></div>
+                    <div class="explore-card-top"><span>01</span><span>OUTERWEAR</span></div>
+                    <div class="explore-info">
+                        <div><h3>Chaquetas</h3><p>Capas con carácter.</p></div>
+                        <span class="explore-arrow">↗</span>
+                    </div>
+                </a>
+
+                <a class="explore-card" href="#productos">
+                    <img src="../Image/Poleron-Pikachu.jpg" alt="Hoodies streetwear UrbanStyle">
+                    <div class="explore-shade"></div>
+                    <div class="explore-card-top"><span>02</span><span>ESSENTIALS</span></div>
+                    <div class="explore-info">
+                        <div><h3>Hoodies</h3><p>Comodidad sin bajar el nivel.</p></div>
+                        <span class="explore-arrow">↗</span>
+                    </div>
+                </a>
+
+                <a class="explore-card" href="#productos">
+                    <img src="../Image/catalogo-jeans-ripped.jpg" alt="Poleras y streetwear UrbanStyle">
+                    <div class="explore-shade"></div>
+                    <div class="explore-card-top"><span>03</span><span>STREET</span></div>
+                    <div class="explore-info">
+                        <div><h3>Poleras</h3><p>Gráficos que hablan por ti.</p></div>
+                        <span class="explore-arrow">↗</span>
+                    </div>
+                </a>
+
+                <a class="explore-card explore-card-wide" href="#productos">
+                    <img src="../Image/catalogo-pantalon-cargo.jpg" alt="Pantalones streetwear UrbanStyle">
+                    <div class="explore-shade"></div>
+                    <div class="explore-card-top"><span>04</span><span>BOTTOMS</span></div>
+                    <div class="explore-info">
+                        <div><h3>Pantalones</h3><p>Cortes cargo, denim y siluetas urbanas.</p></div>
+                        <span class="explore-arrow">↗</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- PRODUCTOS -->
+        <section id="productos" class="products-section section-shell">
+            <div class="section-heading product-heading">
+                <div>
+                    <span class="section-number">03 / SELECCIÓN</span>
+                    <h2>Lo que está<br><span>sonando.</span></h2>
+                </div>
+                <a class="text-link" href="../View/Carrito.html">Ver bolsa <span>→</span></a>
+            </div>
+
+            <div class="product-toolbar" aria-label="Buscar y ordenar productos">
+                <div class="product-search">
+                    <label for="searchProducts">Buscar por nombre</label>
+                    <input type="search" id="searchProducts" placeholder="Ej: hoodie, chaqueta..." aria-label="Buscar producto por nombre">
+                </div>
+
+                <div class="product-sort">
+                    <label for="sortProducts">Ordenar por</label>
+                    <select id="sortProducts" aria-label="Ordenar productos por nombre o precio">
+                        <option value="default">Sin ordenar</option>
+                        <option value="name-asc">Nombre A-Z</option>
+                        <option value="name-desc">Nombre Z-A</option>
+                        <option value="price-asc">Precio: menor a mayor</option>
+                        <option value="price-desc">Precio: mayor a menor</option>
+                    </select>
+                </div>
+
+                <button type="button" class="btn product-sort-btn" id="applySort">Ordenar</button>
+            </div>
+
+            <div id="productosGrid" class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 premium-product-grid"></div>
+        </section>
+
+        <!-- EDITORIAL -->
+        <section class="editorial-banner">
+            <img src="../Image/UrbanStyle-tienda.jpg" alt="Colección UrbanStyle">
+            <div class="editorial-overlay"></div>
+            <div class="editorial-content">
+                <span class="section-number light">04 / EDITORIAL</span>
+                <h2>HECHO PARA<br><span>LA CALLE.</span></h2>
+                <p>Diseñado en Santiago. Inspirado por la ciudad.</p>
+                <a class="premium-btn premium-btn-primary" href="../View/blog.html">Ver editorial <span>↗</span></a>
+            </div>
+        </section>
+
+        <!-- BENEFICIOS -->
+        <section class="benefits-section section-shell">
+            <div class="benefit-item"><span>01</span><div><strong>Envíos a todo Chile</strong><p>Despachamos tu pedido a todo el país.</p></div></div>
+            <div class="benefit-item"><span>02</span><div><strong>Compra segura</strong><p>Tus datos protegidos durante todo el proceso.</p></div></div>
+            <div class="benefit-item"><span>03</span><div><strong>Atención directa</strong><p>Estamos para ayudarte con tu compra.</p></div></div>
+            <div class="benefit-item"><span>04</span><div><strong>30 días para cambios</strong><p>Compra con tranquilidad y arma tu fit.</p></div></div>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter-section">
+            <div class="newsletter-inner">
+                <span class="section-number light">05 / COMMUNITY</span>
+                <h2>ENTRA AL<br><span>CÍRCULO.</span></h2>
+                <p>Recibe drops, novedades y contenido de UrbanStyle antes que nadie.</p>
+                <form class="newsletter-form" onsubmit="return false;">
+                    <input type="email" placeholder="Tu correo electrónico" aria-label="Tu correo electrónico">
+                    <button type="submit">Suscribirme <span>→</span></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="premium-footer">
+        <div class="footer-top section-shell">
+            <div class="footer-brand">
+                <img src="../Image/favicon-urbanstyle.svg" alt="UrbanStyle">
+                <p>Tu calle. Tu estilo.<br>Tu identidad.</p>
+            </div>
+            <div class="footer-col"><span>SHOP</span><a href="#productos">Productos</a><a href="#categorias">Categorías</a><a href="../View/Carrito.html">Bolsa</a></div>
+            <div class="footer-col"><span>URBANSTYLE</span><a href="../View/nosotros.html">Nosotros</a><a href="../View/blog.html">Blog</a><a href="../View/contacto.html">Contacto</a></div>
+            <div class="footer-col"><span>CUENTA</span><a href="../View/Login.html">Iniciar sesión</a><a href="../View/registroUsuario.html">Registrarse</a></div>
+        </div>
+        <div class="footer-bottom section-shell"><span>© 2026 UrbanStyle</span><span>STREETWEAR / SANTIAGO, CHILE</span><span>Todos los derechos reservados</span></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/Funciones.js"></script>
+    <script src="../js/layout.js"></script>
+</body>
+</html>
+
+
+@
